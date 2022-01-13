@@ -1,48 +1,50 @@
 .menu {
     width: 100%;
     padding: 10px;
-    border-bottom: 1px solid gray;
-  }
-  .menu__logo {
-    font-family: $coda;
-    font-size: 24px;
-    font-weight: bold;
+    border-bottom: 1px solid $grey;
+  
+  &__logo {
+    font-family: $roboto;
+    font-size: $medium;
+    font-weight: $light;
     text-transform: uppercase;
   }
-  .menu__nav {
+
+}
+  .navbar {
     position: absolute;
     right: 6%;
     top: 0;
-  }
   
-  .menu__nav li {
+  
+  &__list {
     display: inline-block;
     list-style: none;
-  }
-  .menu__nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: $nova;
-    font-size: 1rem;
-    color: black;
+    font-family: $roboto;
+    font-size: $x-small;
+    color: $black;
     border-radius: 5px;
     padding: 0.5rem;
-  }
-  .menu__input-menu {
-    font-family: $nova;
+
+  &--input-menu {
+    font-family: $roboto;
     font-size: 1rem;
     padding-left: 1rem;
-    border: 2px solid #666;
+    border: 2px solid $grey;
     border-radius: 30px;
   }
+ }
+}
   
-  .menu__nav ul li:hover > :not(input) {
-    background-color: black;
-    color: white;
+ /* .menu__navbar ul li:hover > :not(input) {
+    background-color: $black;
+    color: $white;
     transition: ease-in-out 0.5s;
   }
   
-  @media (max-width: $md) {
+  @media (max-width: $max-mobile) {
     .menu__nav {
       width: 50%;
   
@@ -62,4 +64,5 @@
       display: none;
     }
   }
-  
+}
+  */
