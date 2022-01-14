@@ -1,20 +1,21 @@
 .menu {
     width: 100%;
-    padding: 10px;
-    border-bottom: 1px solid $grey;
+    padding: 20px;
+    border-bottom:1.5px solid $grey;
   
   &__logo {
     font-family: $roboto;
     font-size: $medium;
     font-weight: $light;
     text-transform: uppercase;
+    margin-top: -5px;
   }
 
 }
   .navbar {
     position: absolute;
-    right: 6%;
-    top: 0;
+    right: 2%;
+    top: -1%;
   
   
   &__list {
@@ -28,41 +29,41 @@
     border-radius: 5px;
     padding: 0.5rem;
 
-  &--input-menu {
+  & .input-menu {
+    list-style: none;
     font-family: $roboto;
-    font-size: 1rem;
+    font-size: $x-small;
     padding-left: 1rem;
     border: 2px solid $grey;
-    border-radius: 30px;
+    border-radius: 50px;
   }
  }
 }
   
- /* .menu__navbar ul li:hover > :not(input) {
+  .navbar__list:hover > :not(input) {
     background-color: $black;
     color: $white;
     transition: ease-in-out 0.5s;
   }
   
   @media (max-width: $max-mobile) {
-    .menu__nav {
+    .navbar {
       width: 50%;
   
-      li {
+      &__list {
         width: 25%;
       }
     }
-    .menu__nav ul li a {
-      font-size: 0.8rem;
+    .navbar__list {
+      font-size:0.8rem;
     }
-    .menu__input-menu {
+    .input-menu {
       margin-left: 2rem;
       width: 8rem;
       font-size: 0.8rem;
     }
-    .menu .menu__nav li:first-child {
+    .navbar__list:first-child {
       display: none;
     }
   }
-}
-  */
+  

@@ -4,8 +4,10 @@
 @import "base/base";
 @import "base/reset";
 
-@import "components/butttons";
+@import "components/buttons";
 
-//@import "layout/main";
-//@import "layout/content";
+@import "layout/footer";
+@import "layout/content";
 @import "layout/navigation";
+@import "layout/container";
+@import "layout/newsletter";
